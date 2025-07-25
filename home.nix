@@ -22,6 +22,7 @@
 		crystal
 		gleam
 		elixir
+		terraform
 		claude-code
 		pkgs.karabiner-elements
 
@@ -41,6 +42,7 @@
 		podman-compose
 		podman-tui
 		skopeo
+		tftui
 
 		# Compression
 		atool
