@@ -42,7 +42,6 @@
 		podman-compose
 		podman-tui
 		skopeo
-		tftui
 
 		# Compression
 		atool
