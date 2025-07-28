@@ -21,6 +21,8 @@
     ];
 
     brews = [
+	"pipx"
+	"uv"
     ];
 
     #GUI Applications
