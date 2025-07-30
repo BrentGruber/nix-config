@@ -26,6 +26,15 @@
 		claude-code
 		pkgs.karabiner-elements
 
+		#LSP servers
+		lua-language-server
+		pyright
+		gopls
+		zls
+		bash-language-server
+		svelte-language-tools
+		nil
+
 		# CLI utilites
 		htop
 		tree
