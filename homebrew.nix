@@ -68,7 +68,6 @@
       # "App Name" = app-id;
       "Kindle" = 302584613;
       "Vimlike" = 1584519802;
-      "telegram" = 747648890;
     };
   };
 }
