@@ -36,6 +36,10 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, homebrew-services, claude-code}:
     let
+
+      overlays = {
+	nixpkgs.overlays = overlays;
+      };
       configuration = { pkgs, ... }: {
         # List packages installed in system profile. To search by name
         # run: $ nix-env -qaP | grep wget
@@ -76,10 +80,6 @@
         # The platform the configuration will be used on
         nixpkgs.hostPlatform = "aarch64-darwin";
 
-	# neovim nightly overlay
-	overlays = [
-	  inputs.neovim-nightly-overlay.overlays.default
-	];
       };
     in
     {
