@@ -37,9 +37,9 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, homebrew-services, claude-code, neovim-nightly-overlay}:
     let
 
-      overlays = {
-	nixpkgs.overlays = overlays;
-      };
+      overlays = [
+        neovim-nightly-overlay.overlays.default
+      ];
       configuration = { pkgs, ... }: {
         # List packages installed in system profile. To search by name
         # run: $ nix-env -qaP | grep wget
