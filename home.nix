@@ -110,8 +110,6 @@
 		# copy
 		#".screenrc".source = dotfiles/screenrc;
 
-		# neovim config
-		".config/nvim/init.lua".source = dotfiles/init.lua; 
 
 		# You can also set the file content immediately.
 		".gradle/gradle.properties".text = ''
