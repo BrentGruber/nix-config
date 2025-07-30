@@ -27,12 +27,16 @@
 		pkgs.karabiner-elements
 
 		#LSP servers
-		lua-language-server
-		pyright
-		gopls
-		zls
-		bash-language-server
-		nil
+		lua-language-server #lua
+		pyright #python
+		gopls #go
+		zls # zig
+		bash-language-server #bash
+		alejandra #nix
+		marksman #markdown
+		yaml-language-server #yaml
+		vscode-langservers-extracted #json, html, css, eslint
+		nodePackages.eslint_d
 
 		# CLI utilites
 		htop
