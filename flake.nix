@@ -28,6 +28,9 @@
 
     # Claude
     claude-code.url = "github:sadjow/claude-code-nix";
+
+    # For installing nightly build of neovim, using this to get the built in package manager
+    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     
   };
 
@@ -73,7 +76,10 @@
         # The platform the configuration will be used on
         nixpkgs.hostPlatform = "aarch64-darwin";
 
-
+	# neovim nightly overlay
+	overlays = [
+	  inputs.neovim-nightly-overlay.overlays.default
+	];
       };
     in
     {
@@ -139,6 +145,7 @@
 	      mutableTaps = false;
 	    };
  	  }
+	  { nixpkgs.overlays = overlays; }
           ./homebrew.nix
 	];
       };
