@@ -32,7 +32,6 @@
 		gopls
 		zls
 		bash-language-server
-		svelte-language-tools
 		nil
 
 		# CLI utilites
